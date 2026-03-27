@@ -62,3 +62,4 @@ if __name__ == "__main__":
 
     result = predictor.predict(test_data)
     print(f"Prediction: {result['co2_tons']} tons CO2/ha (±{result['confidence_percent']}%)")
+
