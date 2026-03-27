@@ -19,7 +19,7 @@ app.add_middleware(
 
 # Initialize ML model
 try:
-    predictor = CarbonPredictor('backend/agbp_model.pkl')
+    predictor = CarbonPredictor('agbp_model.pkl')
 except Exception as e:
     print(f"Warning: Could not initialize predictor. Falling back to dummy logic. Error: {e}")
     predictor = None

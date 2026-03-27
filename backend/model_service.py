@@ -4,9 +4,9 @@ import os
 from typing import Dict
 
 class CarbonPredictor:
-    def __init__(self, model_path='backend/agbp_model.pkl'):
+    def __init__(self, model_path='agbp_model.pkl'):
         # Get the absolute path to the model file
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        base_dir = os.path.dirname(os.path.abspath(__file__))
         full_model_path = os.path.join(base_dir, model_path.replace('/', os.sep))
         
         if not os.path.exists(full_model_path):
